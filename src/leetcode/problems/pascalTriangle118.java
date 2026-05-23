@@ -8,7 +8,7 @@ public class pascalTriangle118 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println(generate(5));
+		System.out.println(generate(3));
 	}
 	
 	 public static List<List<Integer>> generate(int numRows) {
@@ -20,6 +20,7 @@ public class pascalTriangle118 {
 	            List<Integer> innerList= new ArrayList<>();
 	            for(int j=i;j>0;j--){
 	                arr[j]=arr[j]+arr[j-1];
+	                System.out.println(arr[j]);
 	               
 	            }
 	            for(int j=0;j<=i;j++){
